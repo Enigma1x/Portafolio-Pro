@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    font-size: 1.4em;
+    transition: font-size 0.3s ease;
+}
+
+main {
+    flex: 1;
+    margin-top: 60px; /* Ajustar según el tamaño del header */
+}
+
+section {
+    padding: 2em;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.contenedor-sobre-mi {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+}
+
+.mi-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 2em;
+}
+
+.texto-sobre-mi {
+    flex: 1;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.proyecto {
+    flex: 1 1 30%;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 1em;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.proyecto img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.proyecto img:hover {
+    transform: scale(1.1);
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto h3 {
+    margin: 0.5em 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75em;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.redes-sociales a {
+    margin: 0 1em;
+    display: inline-block;
+}
+
+.redes-sociales img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.2);
+}
